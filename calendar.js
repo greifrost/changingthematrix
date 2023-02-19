@@ -2,7 +2,7 @@ let calendarContainer = document.querySelector("#calendar-container");
 let calendarRendered = false;
 let curDateStr = null;
 let curDateTimeStr = null;
-let renderAll = false;
+let renderAll = true;
 
 function renderEvents() {
     if(calendarRendered) {
