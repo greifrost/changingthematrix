@@ -2,7 +2,7 @@ let calendarContainer = document.querySelector("#calendar-container");
 let calendarRendered = false;
 let curDateStr = null;
 let curDateTimeStr = null;
-let renderAll = true;
+let renderAll = false;
 
 function renderEvents() {
     if(calendarRendered) {
@@ -85,9 +85,9 @@ async function setServerTime() {
         console.log(error);
     }
 
-    setTimeout(() => {
-        setServerTime();
-    }, 3000);
+    // setTimeout(() => {
+    //     setServerTime();
+    // }, 3000);
 }
 
 setServerTime();
