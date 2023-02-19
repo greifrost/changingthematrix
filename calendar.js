@@ -23,14 +23,14 @@ function renderEvents() {
         },
         {
             price: 'AU$ 29',
-            start: '2023-03-15',
-            end: '2023-03-29',
+            start: '2023-3-15',
+            end: '2023-3-29',
             ktValue: 'aPweOAd3HoYf',
         },
         {
             price: 'AU$ 45',
-            start: '2023-03-29',
-            end: '2023-04-05',
+            start: '2023-3-29',
+            end: '2023-4-5',
             ktValue: 'wuHgnVWZ6KlF',
         },
     ];
@@ -53,7 +53,6 @@ function renderEvents() {
                 data-kt-owner="mpD5zD4g"
                 data-kt-accent="#90642f" >
             </div>
-            <br/><br/><br/>
             `;
 
                 // <div class="js_kt_asset_embed js_kartra_trackable_object" data-kt-type="calendar" data-kt-embed="inline" 
@@ -79,6 +78,8 @@ function renderEvents() {
 
                 // <script type="text/javascript" src="https://app.kartra.com/js/build/front/embed/calendar.js"></script>
     }
+
+    calendarContainer.innerHTML += `<script type="text/javascript" src="https://app.kartra.com/js/build/front/embed/calendar.js" defer=""></script>`;
     calendarRendered = true;
 }
 
