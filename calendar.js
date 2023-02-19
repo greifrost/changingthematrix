@@ -56,6 +56,7 @@ function renderEvents() {
                 data-kt-owner="mpD5zD4g"
                 data-kt-accent="#90642f" >
             </div>
+            <script type="text/javascript" src="https://app.kartra.com/js/build/front/embed/calendar.js"></script>
             `;
 
                 // <div class="js_kt_asset_embed js_kartra_trackable_object" data-kt-type="calendar" data-kt-embed="inline" 
@@ -82,7 +83,6 @@ function renderEvents() {
                 // <script type="text/javascript" src="https://app.kartra.com/js/build/front/embed/calendar.js"></script>
     }
 
-    calendarContainer.innerHTML += `<script type="text/javascript" src="https://app.kartra.com/js/build/front/embed/calendar.js" defer=""></script>`;
     calendarRendered = true;
 }
 
