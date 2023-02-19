@@ -1,7 +1,8 @@
 let calendarContainer = document.querySelector("#calendar-container");
 let calendarRendered = false;
 let curDateStr = null;
-let curDateTime = null;
+let curDateTimeStr = null;
+let renderAll = false;
 
 function renderEvents() {
     if(calendarRendered) {
@@ -38,15 +39,14 @@ function renderEvents() {
     for (let i = 0; i < events.length; i++) {
         const event = events[i];
 
-        // console.log(`${curDateStr} vs ${event.start} to ${event.end}`);
-        if(curDateStr < event.start || curDateStr > event.end) {
-            // console.log('continue!');
-            continue;
+        if(!renderAll) {
+            if(curDateStr < event.start || curDateStr > event.end) {
+                continue;
+            }
         }
-        // console.log('included!');
 
         calendarContainer.innerHTML += `
-            <h1>Current Date Time: ${curDateTime}</h1>
+            <h1>Current Date Time: ${curDateTimeStr}</h1>
             <h1>Price: ${event.price}</h1>
             <h2>Start Date: ${event.start}</h2>
             <h2>End Date: ${event.end}</h2>
@@ -59,28 +59,6 @@ function renderEvents() {
             
             `;
 
-                // <div class="js_kt_asset_embed js_kartra_trackable_object" data-kt-type="calendar" data-kt-embed="inline" 
-                //     data-kt-value="wuHgnVWZ6KlF" 
-                //     data-kt-owner="mpD5zD4g" 
-                //     data-kt-accent="#90642f" ></div>
-                    
-                //     <script type="text/javascript" src="https://app.kartra.com/js/build/front/embed/calendar.js"></script>
-        
-        
-                // <div class="js_kt_asset_embed js_kartra_trackable_object" data-kt-type="calendar" data-kt-embed="inline" 
-                //     data-kt-value="aPweOAd3HoYf" 
-                //     data-kt-owner="mpD5zD4g" 
-                //     data-kt-accent="#90642f" ></div>
-                
-                // <script type="text/javascript" src="https://app.kartra.com/js/build/front/embed/calendar.js"></script>
-
-
-                // <div class="js_kt_asset_embed js_kartra_trackable_object" data-kt-type="calendar" data-kt-embed="inline" 
-                //     data-kt-value="kBqhVFJeg0Yf" 
-                //     data-kt-owner="mpD5zD4g" 
-                //     data-kt-accent="#90642f" ></div>
-
-                // <script type="text/javascript" src="https://app.kartra.com/js/build/front/embed/calendar.js"></script>
     }
 
     calendarRendered = true;
@@ -100,11 +78,8 @@ async function setServerTime() {
         let minutes = curDate.getMinutes();
 
         curDateStr = `${year}-${month}-${date}`;
-        curDateTime = `${year}-${month}-${date} - ${hours}:${minutes}`;
+        curDateTimeStr = `${year}-${month}-${date} - ${hours}:${minutes}`;
         
-        // if(date) {
-        //     renderEvents();
-        // }
         renderEvents();
     } catch (error) {
         console.log(error);
