@@ -34,14 +34,7 @@
         for (let i = 0; i < events.length; i++) {
             const event = events[i];
             calendarContainer.innerHTML += event.price;
-            calendarContainer.innerHTML += `
-                <div class="js_kt_asset_embed js_kartra_trackable_object"
-                    data-kt-type="calendar"
-                    data-kt-embed="inline"
-                    data-kt-value="${event.ktValue}
-                    data-kt-owner="mpD5zD4g"
-                    data-kt-accent="#90642f" >
-                </div>`;
+            calendarContainer.innerHTML += `<div class="js_kt_asset_embed js_kartra_trackable_object" data-kt-type="calendar" data-kt-embed="inline" data-kt-value="${event.ktValue} data-kt-owner="mpD5zD4g" data-kt-accent="#90642f" ></div>`;
 
                     // <div class="js_kt_asset_embed js_kartra_trackable_object" data-kt-type="calendar" data-kt-embed="inline" 
                     //     data-kt-value="wuHgnVWZ6KlF" 
