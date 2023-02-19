@@ -8,6 +8,7 @@
             return;
         }
 
+        
         let events = [
             {
                 price: '<h1>AU$ 19</h1>',
@@ -37,11 +38,33 @@
                 <div class="js_kt_asset_embed js_kartra_trackable_object"
                     data-kt-type="calendar"
                     data-kt-embed="inline"
-                    data-kt-value="kBqhVFJeg0Yf
+                    data-kt-value="${event.ktValue}
                     data-kt-owner="mpD5zD4g"
                     data-kt-accent="#90642f" >
-                    </div>`;
-            console.log('append child...');
+                </div>`;
+
+                    // <div class="js_kt_asset_embed js_kartra_trackable_object" data-kt-type="calendar" data-kt-embed="inline" 
+                    //     data-kt-value="wuHgnVWZ6KlF" 
+                    //     data-kt-owner="mpD5zD4g" 
+                    //     data-kt-accent="#90642f" ></div>
+                        
+                    //     <script type="text/javascript" src="https://app.kartra.com/js/build/front/embed/calendar.js"></script>
+            
+            
+                    // <div class="js_kt_asset_embed js_kartra_trackable_object" data-kt-type="calendar" data-kt-embed="inline" 
+                    //     data-kt-value="aPweOAd3HoYf" 
+                    //     data-kt-owner="mpD5zD4g" 
+                    //     data-kt-accent="#90642f" ></div>
+                    
+                    // <script type="text/javascript" src="https://app.kartra.com/js/build/front/embed/calendar.js"></script>
+
+
+                    // <div class="js_kt_asset_embed js_kartra_trackable_object" data-kt-type="calendar" data-kt-embed="inline" 
+                    //     data-kt-value="kBqhVFJeg0Yf" 
+                    //     data-kt-owner="mpD5zD4g" 
+                    //     data-kt-accent="#90642f" ></div>
+
+                    // <script type="text/javascript" src="https://app.kartra.com/js/build/front/embed/calendar.js"></script>
         }
         calendarRendered = true;
     }
