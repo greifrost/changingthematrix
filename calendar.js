@@ -33,13 +33,14 @@
         for (let i = 0; i < events.length; i++) {
             const event = events[i];
             calendarContainer.innerHTML += event.price;
-            calendarContainer.innerHTML += '<div class="js_kt_asset_embed js_kartra_trackable_object"';
-            calendarContainer.innerHTML += '    data-kt-type="calendar" ';
-            calendarContainer.innerHTML += '    data-kt-embed="inline"  ';
-            calendarContainer.innerHTML += '    data-kt-value="kBqhVFJeg0Yf" ';
-            calendarContainer.innerHTML += '    data-kt-owner="mpD5zD4g"  ';
-            calendarContainer.innerHTML += '    data-kt-accent="#90642f" >  ';
-            calendarContainer.innerHTML += '    </div> ';
+            calendarContainer.innerHTML += `
+                <div class="js_kt_asset_embed js_kartra_trackable_object"
+                    data-kt-type="calendar"
+                    data-kt-embed="inline"
+                    data-kt-value="kBqhVFJeg0Yf
+                    data-kt-owner="mpD5zD4g"
+                    data-kt-accent="#90642f" >
+                    </div>`;
             console.log('append child...');
         }
         calendarRendered = true;
