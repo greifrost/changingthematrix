@@ -100,7 +100,7 @@ async function setServerTime() {
         let minutes = curDate.getMinutes();
 
         curDateStr = `${year}-${month}-${date}`;
-        curDateTime = `${month} ${date}, ${year} - ${hours}:${minutes}`;
+        curDateTime = `${year}-${month}-${date} - ${hours}:${minutes}`;
         
         // if(date) {
         //     renderEvents();
@@ -117,5 +117,5 @@ async function setServerTime() {
 
 setServerTime();
 
-curDateStr = '2023-2-19';
-renderEvents();
+// curDateStr = '2023-2-19';
+// renderEvents();
