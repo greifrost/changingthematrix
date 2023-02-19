@@ -94,7 +94,7 @@ async function setServerTime() {
 
         let curDate = new Date(result.datetime);
         let year = curDate.getFullYear();
-        let month = curDate.getMonth();
+        let month = curDate.getMonth() + 1;
         let date = curDate.getDate();
         let hours = curDate.getHours();
         let minutes = curDate.getMinutes();
