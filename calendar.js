@@ -38,12 +38,12 @@ function renderEvents() {
     for (let i = 0; i < events.length; i++) {
         const event = events[i];
 
-        console.log(`${curDateStr} vs ${event.start} to ${event.end}`);
+        // console.log(`${curDateStr} vs ${event.start} to ${event.end}`);
         if(curDateStr < event.start || curDateStr > event.end) {
-            console.log('continue!');
+            // console.log('continue!');
             continue;
         }
-        console.log('included!');
+        // console.log('included!');
 
         calendarContainer.innerHTML += `
             <h1>Current Date Time: ${curDateTime}</h1>
@@ -115,4 +115,7 @@ async function setServerTime() {
     }, 3000);
 }
 
-setServerTime();
+// setServerTime();
+
+curDateStr = '2023-2-19';
+renderEvents();
