@@ -1,13 +1,16 @@
-
     let calendarRendered = false;
+    
     function renderEvents() {
+        let calendarContainer = document.querySelector("#calendar-container");
+        console.log(calendarContainer);
+        console.log('render events');
         if(calendarRendered) {
             return;
         }
 
         let events = [
             {
-                price: 'AU$ 19',
+                price: '<h1>AU$ 19</h1>',
                 start: '2023-03-01',
                 end: '2023-03-15',
                 ktValue: 'kBqhVFJeg0Yf',
@@ -26,24 +29,24 @@
             },
         ];
 
-        let calendarContainer = document.querySelector("#calendar-container");
+        console.log(calendarContainer);
         for (let i = 0; i < events.length; i++) {
             const event = events[i];
-            calendarContainer.innerHTML += '<h1>' + event.price + '</h1>';
-            calendarRendered = true;
+            calendarContainer.innerHTML += event.price;
+            calendarContainer.innerHTML += '<div class="js_kt_asset_embed js_kartra_trackable_object"';
+            calendarContainer.innerHTML += '    data-kt-type="calendar" ';
+            calendarContainer.innerHTML += '    data-kt-embed="inline"  ';
+            calendarContainer.innerHTML += '    data-kt-value="kBqhVFJeg0Yf" ';
+            calendarContainer.innerHTML += '    data-kt-owner="mpD5zD4g"  ';
+            calendarContainer.innerHTML += '    data-kt-accent="#90642f" >  ';
+            calendarContainer.innerHTML += '    </div> ';
+            console.log('append child...');
         }
+        calendarRendered = true;
+    }
 
 
     async function setServerTime() {
-        // First Release - AU$ 19
-        // (March 1, 6pm - March 15, 6pm)
-        
-        // Second Release - AU$ 29
-        // (March 15, 6pm - March 29, 6pm)
-        
-        // Standard Release - AU$ 45
-        // (March 29, 6pm - April 5, 5:45pm)
-
         try {
             let result = (await fetch('https://worldtimeapi.org/api/timezone/Australia/Brisbane'));
             result = (await result.json());
@@ -55,17 +58,15 @@
             let hour = curDate.getHours();
             let minutes = curDate.getMinutes();
 
-
             let serverTimeText = document.querySelector("#server-time");
             serverTimeText.innerHTML = `CURRENT DATE: ${ date }`;
             
-            if(date ) {
+            console.log(date);
+            if(date) {
                 renderEvents();
             }
-
-                // ${ month } ${ date }, ${ year } ${ hour }:${ minutes }
         } catch (error) {
-            
+            console.log(error);
         }
 
         setTimeout(() => {
@@ -73,5 +74,5 @@
         }, 3000);
     }
 
-
     setServerTime();
+    renderEvents();
