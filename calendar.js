@@ -1,5 +1,6 @@
 let calendarContainer = document.querySelector("#calendar-container");
 let calendarRendered = false;
+let curDateStr = null;
 let curDateTime = null;
 
 function renderEvents() {
@@ -10,8 +11,14 @@ function renderEvents() {
     let events = [
         {
             price: 'AU$ 19',
-            start: '2023-03-01',
-            end: '2023-03-15',
+            start: '2023-2-1',
+            end: '2023-2-28',
+            ktValue: 'kBqhVFJeg0Yf',
+        },
+        {
+            price: 'AU$ 19',
+            start: '2023-3-1',
+            end: '2023-3-15',
             ktValue: 'kBqhVFJeg0Yf',
         },
         {
@@ -30,6 +37,11 @@ function renderEvents() {
 
     for (let i = 0; i < events.length; i++) {
         const event = events[i];
+
+        if(curDateStr < event.start || curDateStr > event.end) {
+            continue;
+        }
+
         calendarContainer.innerHTML += `
             <h1>Current Date Time: ${curDateTime}</h1>
             <h1>Price: ${event.price}</h1>
@@ -83,6 +95,7 @@ async function setServerTime() {
         let hours = curDate.getHours();
         let minutes = curDate.getMinutes();
 
+        curDateStr = `${year}-${month}-${date}`;
         curDateTime = `${month} ${date}, ${year} - ${hours}:${minutes}`;
         
         // if(date) {
