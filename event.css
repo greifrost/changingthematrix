@@ -1,3 +1,7 @@
+#event-calendar-container {
+    display: flex;
+}
+
 #event-container .event {
     display: flex;
     border-left: 3px solid blue;
