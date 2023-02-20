@@ -13,6 +13,13 @@ function renderEvents() {
     
     let events = [
         {
+            period: 'Jan 1-31',
+            price: 'AU$ 19',
+            start: '2023-1-1',
+            end: '2023-1-31',
+            ktValue: 'kBqhVFJeg0Yf',
+        },
+        {
             period: 'Feb 1-28',
             price: 'AU$ 19',
             start: '2023-2-1',
@@ -50,11 +57,11 @@ function renderEvents() {
         if( curDateStr >= event.start && curDateStr <= event.end) {
             eventClass = 'present-event';
         }
-        else if(curDateStr < event.start) {
+        else if(event.start < curDateStr) {
             eventClass = 'past-event';
         }
 
-        else if(curDateStr > event.start) {
+        else if(event.start > curDateStr) {
             eventClass = 'future-event';
         }
 
@@ -72,17 +79,13 @@ function renderEvents() {
         if(eventClass == 'present-event') {
             calendarContainer.innerHTML += `
                 <h1>Current Date Time: ${curDateTimeStr}</h1>
-                <h1>Price: ${event.price}</h1>
-                <h2>Start Date: ${event.start}</h2>
-                <h2>End Date: ${event.end}</h2>
                 <div class="js_kt_asset_embed js_kartra_trackable_object" data-kt-type="calendar"
                     data-kt-embed="inline"
                     data-kt-value="${event.ktValue}"
                     data-kt-owner="mpD5zD4g"
                     data-kt-accent="#90642f" >
                 </div>
-                
-                `;
+            `;
         }
 
     }
