@@ -2,7 +2,10 @@
     display: flex;
     border-left: 3px solid blue;
     padding: 5px 8px;
+}
 
+#event-container .event .price {
+    font-weight: bold;
 }
 
 #event-container .period {
@@ -11,4 +14,12 @@
 
 #event-container .period:before {
     content: ":";
+}
+
+#event-container .event.past-event {
+    text-decoration: line-through;
+}
+
+#event-container .event.present-event {
+    font-size: 1.2em;
 }
