@@ -2,6 +2,10 @@
     display: flex;
 }
 
+#event-container {
+    padding-right: 30px;
+}
+
 #event-container .event {
     display: flex;
     border-left: 3px solid blue;

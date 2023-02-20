@@ -77,8 +77,8 @@ function renderEvents() {
         `;
 
         if(eventClass == 'present-event') {
+            // <h1>Current Date Time: ${curDateTimeStr}</h1>
             calendarContainer.innerHTML += `
-                <h1>Current Date Time: ${curDateTimeStr}</h1>
                 <div class="js_kt_asset_embed js_kartra_trackable_object" data-kt-type="calendar"
                     data-kt-embed="inline"
                     data-kt-value="${event.ktValue}"
