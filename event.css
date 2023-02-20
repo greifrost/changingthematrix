@@ -31,3 +31,8 @@
 #event-container .event.present-event {
     font-size: 1.2em;
 }
+
+
+#calendar-container {
+    flex: auto;
+}
