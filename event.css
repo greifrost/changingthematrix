@@ -13,6 +13,7 @@
 
 #event-container .event .price {
     font-weight: bold;
+    font-size: 1.6em;
 }
 
 #event-container .period {
