@@ -14,7 +14,7 @@ function renderEvents() {
     let events = [
         {
             period: 'Jan 1-31',
-            price: 'AU$ 19',
+            price: '$19',
             start: '2023-1-1',
             end: '2023-1-31',
             ktValue: 'kBqhVFJeg0Yf',
@@ -27,22 +27,22 @@ function renderEvents() {
             ktValue: 'kBqhVFJeg0Yf',
         },
         {
-            period: 'March 1-15',
-            price: 'AU$ 19',
+            period: 'March 1 - 15',
+            price: '$19',
             start: '2023-3-1',
-            end: '2023-3-15',
+            end: '2023-3-7',
             ktValue: 'kBqhVFJeg0Yf',
         },
         {
-            period: 'March 16-29',
-            price: 'AU$ 29',
-            start: '2023-3-16',
+            period: 'March 8 - 29',
+            price: '$29',
+            start: '2023-3-8',
             end: '2023-3-29',
             ktValue: 'aPweOAd3HoYf',
         },
         {
             period: 'March 30 - April 5',
-            price: 'AU$ 45',
+            price: '$45',
             start: '2023-3-30',
             end: '2023-4-5',
             ktValue: 'wuHgnVWZ6KlF',
@@ -125,4 +125,3 @@ setServerTime();
 
 // curDateStr = '2023-2-19';
 // renderEvents();
-// add something comment
