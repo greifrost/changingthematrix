@@ -13,12 +13,13 @@
 
 #event-container .event .price {
     font-weight: bold;
-    line-height: 1.5em;
+    line-height: 1.0em;
+}
 }
 
 #event-container .period {
     padding-left: 5px;
-    line-height: 1.5em;
+    line-height: 1.0em;
 }
 
 #event-container .period:before {
