@@ -14,7 +14,6 @@
 #event-container .event .price {
     font-weight: bold;
     line-height: 1.0em;
-
 }
 }
 
@@ -31,10 +30,12 @@
 #event-container .event.past-event {
     text-decoration: line-through;
     font-size: 1.4em;
+    line-height: 1.0em;
 }
 
 #event-container .event.present-event {
     font-size: 1.8em;
+    line-height: 1.0em;
 }
 
 
