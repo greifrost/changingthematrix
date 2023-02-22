@@ -27,11 +27,11 @@
 
 #event-container .event.past-event {
     text-decoration: line-through;
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
 
 #event-container .event.present-event {
-    font-size: 2.0em;
+    font-size: 1.8em;
 }
 
 
