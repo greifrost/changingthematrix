@@ -20,7 +20,7 @@
 }
 
 #event-container .period:before {
-    content: " ";
+    content: "  ";
 }
 
 #event-container .event.past-event {
