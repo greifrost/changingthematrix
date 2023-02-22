@@ -27,6 +27,7 @@
 
 #event-container .event.past-event {
     text-decoration: line-through;
+    font-size: 1.6em;
 }
 
 #event-container .event.present-event {
