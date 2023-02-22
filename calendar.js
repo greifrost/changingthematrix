@@ -21,7 +21,7 @@ function renderEvents() {
         },
         {
             period: 'Feb 1-28',
-            price: 'AU$ 19',
+            price: '$19',
             start: '2023-2-1',
             end: '2023-2-28',
             ktValue: 'kBqhVFJeg0Yf',
