@@ -24,7 +24,7 @@
 }
 
 #event-container .period:before {
-    content: "&nbsp";
+    content: &nbsp;
 }
 
 #event-container .event.past-event {
