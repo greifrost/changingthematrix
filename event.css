@@ -14,6 +14,7 @@
 #event-container .event .price {
     font-weight: bold;
     line-height: 1.0em;
+    font-size: 1.4em;
 }
 }
 
@@ -40,7 +41,6 @@
 
 #event-container .event.future-event {
     font-size: 1.4em;
-    text-decoration: line-through;
 }
 
 
