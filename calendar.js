@@ -90,11 +90,7 @@ function renderEvents() {
 
     }
 
-    calendarContainer.innerHTML += `
-        <script type="text/javascript" src="https://app.kartra.com/js/build/front/embed/calendar.js" defer=""></script>
-    `;
-
-    console.log(calendarContainer.innerHTML);
+    include('https://app.kartra.com/js/build/front/embed/calendar.js');
 
     calendarRendered = true;
 }
@@ -127,6 +123,18 @@ async function setServerTime() {
     // }, 3000);
 }
 
+
+function include(file) {
+      
+    var script = document.createElement('script');
+    script.src = file;
+    script.type = 'text/javascript';
+    script.defer = true;
+      
+    document.getElementsByTagName('head').item(0).appendChild(script);
+      
+}
+      
 setServerTime();
 
 // curDateStr = '2023-2-19';
