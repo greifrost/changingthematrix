@@ -83,7 +83,7 @@ function renderEvents() {
                     data-kt-embed="inline"
                     data-kt-value="${event.ktValue}"
                     data-kt-owner="mpD5zD4g"
-                    data-kt-accent="#90642f" >
+                    data-kt-accent="#7f4fc0" >
                 </div>
             `;
         }
