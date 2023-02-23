@@ -16,7 +16,6 @@
     line-height: 1.0em;
     font-size: 1.4em;
 }
-}
 
 #event-container .period {
     padding-left: 5px;
@@ -33,12 +32,10 @@
     font-size: 1.4em;
 
 }
-
 #event-container .event.present-event {
     font-size: 1.8em;
     line-height: 1.0em;
 }
-
 #event-container .event.future-event {
     font-size: 1.4em;
 }
