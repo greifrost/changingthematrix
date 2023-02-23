@@ -13,14 +13,14 @@ function renderEvents() {
     
     let events = [
         {
-            period: 'Jan 1-31',
+            period: 'January 1-31',
             price: '$19',
             start: '2023-1-1',
             end: '2023-1-31',
             ktValue: 'kBqhVFJeg0Yf',
         },
         {
-            period: 'Feb 1-28',
+            period: 'February 1-28',
             price: '$19',
             start: '2023-2-1',
             end: '2023-2-28',
