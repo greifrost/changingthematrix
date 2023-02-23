@@ -13,35 +13,35 @@ function renderEvents() {
     
     let events = [
         {
-            period: '&nbsp&nbspJanuary 1-31',
+            period: '&nbspJanuary 1-31',
             price: '$19',
             start: '2023-1-1',
             end: '2023-1-31',
             ktValue: 'kBqhVFJeg0Yf',
         },
         {
-            period: 'February 1-28',
+            period: '&nbspFebruary 1-28',
             price: '$19',
             start: '2023-2-1',
             end: '2023-2-28',
             ktValue: 'kBqhVFJeg0Yf',
         },
         {
-            period: 'March 1 - 15',
+            period: '&nbspMarch 1 - 15',
             price: '$19',
             start: '2023-3-1',
             end: '2023-3-7',
             ktValue: 'kBqhVFJeg0Yf',
         },
         {
-            period: 'March 8 - 29',
+            period: '&nbspMarch 8 - 29',
             price: '$29',
             start: '2023-3-8',
             end: '2023-3-29',
             ktValue: 'aPweOAd3HoYf',
         },
         {
-            period: 'March 30 - April 5',
+            period: '&nbspMarch 30 - April 5',
             price: '$45',
             start: '2023-3-30',
             end: '2023-4-5',
