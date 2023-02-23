@@ -35,6 +35,7 @@
 #event-container .event.present-event {
     font-size: 1.4em;
     line-height: 1.0em;
+    color: 0xB61FA2;
 }
 #event-container .event.future-event {
     font-size: 1.2em;
