@@ -13,7 +13,7 @@ function renderEvents() {
     
     let events = [
         {
-            period: 'January 1-31',
+            period: '&nbspJanuary 1-31',
             price: '$19',
             start: '2023-1-1',
             end: '2023-1-31',
