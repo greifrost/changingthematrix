@@ -35,6 +35,7 @@ function renderEvents() {
         },
     ];
 
+    let eventAddedFlag = false;
     for (let i = 0; i < events.length; i++) {
         const event = events[i];
 
@@ -72,11 +73,19 @@ function renderEvents() {
                     data-kt-accent="#7f4fc0" >
                 </div>
             `;
+            eventAddedFlag = true;
         }
 
     }
 
-    include('https://app.kartra.com/js/build/front/embed/calendar.js');
+    if(eventAddedFlag) {
+        include('https://app.kartra.com/js/build/front/embed/calendar.js');
+    } else {
+        calendarContainer.innerHTML = `
+            <h2>Calendar Not Yet Available</h2>
+        `;
+    }
+
 
     calendarRendered = true;
 }
