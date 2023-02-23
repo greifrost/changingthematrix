@@ -19,7 +19,7 @@
 }
 
 #event-container .period {
-    
+    padding-left: 5px;
     line-height: 1.0em;
     font-size: 1.4em;
 }
@@ -31,7 +31,7 @@
 #event-container .event.past-event {
     text-decoration: line-through;
     font-size: 1.4em;
-    line-height: 1.0em;
+
 }
 
 #event-container .event.present-event {
