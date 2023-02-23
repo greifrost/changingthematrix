@@ -38,8 +38,9 @@
     line-height: 1.0em;
 }
 
-#event-container .event .future-event {
+#event-container .event.future-event {
     font-size: 1.4em;
+    text-decoration: line-through;
 }
 
 
