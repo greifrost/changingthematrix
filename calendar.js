@@ -27,7 +27,7 @@ function renderEvents() {
             ktValue: 'kBqhVFJeg0Yf',
         },
         {
-            period: '&nbspMarch 1 - 15',
+            period: '&nbspMarch 1 - 7',
             price: '$19',
             start: '2023-3-1',
             end: '2023-3-7',
