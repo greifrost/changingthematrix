@@ -90,6 +90,10 @@ function renderEvents() {
 
     }
 
+    calendarContainer.innerHTML += `
+        <script type="text/javascript" src="https://app.kartra.com/js/build/front/embed/calendar.js" defer=""></script>
+    `;
+
     calendarRendered = true;
 }
 
