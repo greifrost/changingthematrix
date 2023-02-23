@@ -38,6 +38,10 @@
     line-height: 1.0em;
 }
 
+#event-container .event .future-event {
+    font-size: 1.4em;
+}
+
 
 #calendar-container {
     flex: auto;
