@@ -15,8 +15,8 @@ function renderEvents() {
         {
             period: '&nbsp(First In) 1st March - 8th March @ 5:45PM test',
             price: '$19',
-            start: '2023-2-26 08:45',
-            end: '2023-2-26 08:47',
+            start: '2023-2-26 - 9:34',
+            end: '2023-2-26 - 9:35',
             ktValue: 'kBqhVFJeg0Yf',
         },
         {
