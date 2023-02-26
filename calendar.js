@@ -48,14 +48,16 @@ function renderEvents() {
 
         let eventClass = '';
         // before
-        if( curDateStr >= event.start && curDateStr <= event.end) {
+        console.log(curDateTimeStr);
+        
+        if( curDateTimeStr >= event.start && curDateTimeStr <= event.end) {
             eventClass = 'present-event';
         }
-        else if(event.start < curDateStr) {
+        else if(event.start < curDateTimeStr) {
             eventClass = 'past-event';
         }
 
-        else if(event.start > curDateStr) {
+        else if(event.start > curDateTimeStr) {
             eventClass = 'future-event';
         }
 
