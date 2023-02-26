@@ -13,21 +13,21 @@ function renderEvents() {
     
     let events = [
         {
-            period: '<i>(First In)</i> 1st March - 8th March @ 5:45PM',
+            period: '(First In) <i>1st March - 8th March @ 5:45PM</i>',
             price: '$19',
             start: '2023-3-1',
             end: '2023-3-8 - 17:45',
             ktValue: 'kBqhVFJeg0Yf',
         },
         {
-            period: '<i>(Second Release)</i> 8th March @ 5:46PM - 29th March @ 5:45PM',
+            period: '(Second Release) <i>8th March @ 5:46PM - 29th March @ 5:45PM</i>',
             price: '$29',
             start: '2023-3-8 - 17:46',
             end: '2023-3-29 - 17:45',
             ktValue: 'aPweOAd3HoYf',
         },
         {
-            period: '(General) 29th March @ 5:46PM- 5th April @ 5:45PM',
+            period: '(General) <i>29th March @ 5:46PM- 5th April @ 5:45PM</i>',
             price: '$45',
             start: '2023-3-29 - 17:46',
             end: '2023-4-5 - 17:45',
