@@ -20,7 +20,7 @@ function renderEvents() {
             ktValue: 'kBqhVFJeg0Yf',
         },
         {
-            period: '(Second Release) 8th March @ 5:46PM - 29th March @ 5:45PM',
+            period: '<b>(Second Release)</b> 8th March @ 5:46PM - 29th March @ 5:45PM',
             price: '$29',
             start: '2023-3-8 - 17:46',
             end: '2023-3-29 - 17:45',
