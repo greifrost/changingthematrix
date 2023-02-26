@@ -13,14 +13,14 @@ function renderEvents() {
     
     let events = [
         {
-            period: '(First In) 1st March - 8th March @ 5:45PM',
+            period: '<i>(First In)</i> 1st March - 8th March @ 5:45PM',
             price: '$19',
             start: '2023-3-1',
             end: '2023-3-8 - 17:45',
             ktValue: 'kBqhVFJeg0Yf',
         },
         {
-            period: '<b>(Second Release)</b> 8th March @ 5:46PM - 29th March @ 5:45PM',
+            period: '<i>(Second Release)</i> 8th March @ 5:46PM - 29th March @ 5:45PM',
             price: '$29',
             start: '2023-3-8 - 17:46',
             end: '2023-3-29 - 17:45',
