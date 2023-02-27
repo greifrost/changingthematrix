@@ -27,7 +27,7 @@ function renderEvents() {
             ktValue: 'aPweOAd3HoYf',
         },
         {
-            period: '<b>29th March @ 5:46PM- 5th April (General</b>',
+            period: '<b>29th March @ 5:46PM- 5th April (General)</b>',
             price: '$45',
             start: '2023-3-29 - 17:46',
             end: '2023-4-5 - 17:45',
