@@ -13,21 +13,21 @@ function renderEvents() {
     
     let events = [
         {
-            period: '(First In) <i>1st March - 8th March @ 5:45PM</i>',
+            period: '<b>1st - 8th March (First in Discount)</b>',
             price: '$19',
-            start: '2023-3-1',
+            start: '2023-02-27',
             end: '2023-3-8 - 17:45',
             ktValue: 'kBqhVFJeg0Yf',
         },
         {
-            period: '(Second Release) <i>8th March @ 5:46PM - 29th March @ 5:45PM</i>',
+            period: '<b>8th - 29th March (Second Release)</b>',
             price: '$29',
             start: '2023-3-8 - 17:46',
             end: '2023-3-29 - 17:45',
             ktValue: 'aPweOAd3HoYf',
         },
         {
-            period: '(General) <i>29th March @ 5:46PM- 5th April @ 5:45PM</i>',
+            period: '<b>29th March @ 5:46PM- 5th April (General</b>',
             price: '$45',
             start: '2023-3-29 - 17:46',
             end: '2023-4-5 - 17:45',
@@ -84,7 +84,7 @@ function renderEvents() {
         include('https://app.kartra.com/js/build/front/embed/calendar.js');
     } else {
         calendarContainer.innerHTML = `
-            <h2>Calendar Not Yet Available</h2>
+            /*<h2>Calendar Not Yet Available</h2>*/
         `;
     }
 
