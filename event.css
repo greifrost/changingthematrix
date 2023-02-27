@@ -36,7 +36,7 @@
     font-size: 1.4em;
     line-height: 1.0em;
     color: #7E4FC0;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 #event-container .event.future-event {
     font-size: 1.2em;
