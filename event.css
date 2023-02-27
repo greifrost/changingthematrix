@@ -12,7 +12,7 @@
 }
 
 #event-container .event .price {
-    font-weight: bold;
+    /*font-weight: bold;*/
     line-height: 1.0em;
     font-size: 1.2em;
 }
