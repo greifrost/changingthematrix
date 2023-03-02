@@ -15,7 +15,7 @@ function renderEvents() {
         {
             period: '<b>1st - 8th March</b>',
             price: '$19',
-            start: '2023-02-27',
+            start: '2023-03-01 - 17:45',
             end: '2023-3-8 - 17:45',
             ktValue: 'kBqhVFJeg0Yf',
         },
