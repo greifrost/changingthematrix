@@ -29,7 +29,7 @@ function renderEvents() {
         {
             period: '<b>29th March - 5th April</b>',
             price: '$45',
-            start: '2023-3-9 - 17:46',
+            start: '2023-3-29 - 17:46',
             end: '2023-4-5 - 17:45',
             ktValue: 'wuHgnVWZ6KlF',
         },
