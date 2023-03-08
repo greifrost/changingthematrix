@@ -15,22 +15,22 @@ function renderEvents() {
         {
             period: '<b>1st - 8th March</b>',
             price: '$19',
-            start: '2023-3-1 - 17:45',
-            end: '2023-3-8 - 17:45',
+            start: '2023-03-01 - 17:45',
+            end: '2023-03-08 - 17:45',
             ktValue: 'kBqhVFJeg0Yf',
         },
         {
             period: '<b>8th - 29th March</b>',
             price: '$29',
-            start: '2023-3-8 - 17:46',
-            end: '2023-3-29 - 17:45',
+            start: '2023-03-08 - 17:46',
+            end: '2023-03-29 - 17:45',
             ktValue: 'aPweOAd3HoYf',
         },
         {
             period: '<b>29th March - 5th April</b>',
             price: '$45',
-            start: '2023-3-29 - 17:46',
-            end: '2023-4-5 - 17:45',
+            start: '2023-03-29 - 17:46',
+            end: '2023-04-05 - 17:45',
             ktValue: 'wuHgnVWZ6KlF',
         },
     ];
@@ -99,12 +99,13 @@ async function setServerTime() {
         result = (await result.json());
 
         let curDate = new Date(result.datetime);
-        let year = curDate.getFullYear();
-        let month = curDate.getMonth() + 1;
-        let date = curDate.getDate();
-        let hours = curDate.getHours();
-        let minutes = curDate.getMinutes();
+        let year = curDate.getFullYear().toString().padStart(2,0);
+        let month = (curDate.getMonth() + 1).toString().padStart(2,0);
+        let date = curDate.getDate().toString().padStart(2,0);
+        let hours = curDate.getHours().toString().padStart(2,0);
+        let minutes = curDate.getMinutes().toString().padStart(2,0);
 
+        
         curDateStr = `${year}-${month}-${date}`;
         curDateTimeStr = `${year}-${month}-${date} - ${hours}:${minutes}`;
         
@@ -133,6 +134,3 @@ function include(file) {
 }
       
 setServerTime();
-
-// curDateStr = '2023-2-19';
-// renderEvents();
