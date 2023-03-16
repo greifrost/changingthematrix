@@ -1,7 +1,5 @@
 let calendarContainer = document.querySelector("#calendar-container");
 let eventContainer = document.querySelector("#event-container");
-let personRadio = document.querySelector('#personRadio');
-let virtualRadio = document.querySelector('#virtualRadio');
 
 let calendarRendered = false;
 let curDateStr = null;
@@ -145,13 +143,31 @@ async function setServerTime() {
     // }, 3000);
 }
 
-function attachEventListeners() {
+function togglePersonVirtualCalendar() {
+    let personRadio = document.querySelector('#personRadio');
+    let virtualRadio = document.querySelector('#virtualRadio');
+    let personCalendar = document.querySelector('#personCalendar');
+    let virtualCalendar = document.querySelector('#virtualCalendar');
+
+
+
     function toggleDisplay(event) {
-        let type = event.target.value
-        console.log(type);
+        let type = event.target.value;
+
+        if(type == 'person') {
+            personCalendar.style.display = "inline-block";
+            virtualCalendar.style.display = "none";
+        }
+        else if(type == 'virtual') {
+            personCalendar.style.display = "none";
+            virtualCalendar.style.display = "inline-block";
+        }
     }
 
-    if(personRadio && virtualRadio) {
+    if(personRadio && virtualRadio && personCalendar && virtualCalendar) {
+        personCalendar.style.display = "inline-block";
+        virtualCalendar.style.display = "none";
+
         personRadio.addEventListener('change', toggleDisplay);
         virtualRadio.addEventListener('change', toggleDisplay);
     }
@@ -169,4 +185,4 @@ function include(file) {
 }
       
 setServerTime();
-attachEventListeners();
+togglePersonVirtualCalendar();
