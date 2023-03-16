@@ -134,6 +134,7 @@ async function setServerTime() {
         eventContainer.innerHTML = '';
         calendarContainer.innerHTML = '';
         renderEvents();
+        togglePersonVirtualCalendar();
     } catch (error) {
         console.log(error);
     }
@@ -185,4 +186,3 @@ function include(file) {
 }
       
 setServerTime();
-togglePersonVirtualCalendar();
