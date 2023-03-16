@@ -17,21 +17,24 @@ function renderEvents() {
             price: '$19',
             start: '2023-03-01 - 17:45',
             end: '2023-03-08 - 17:45',
-            ktValue: 'kBqhVFJeg0Yf',
+            personCalendarCode: 'kBqhVFJeg0Yf',
+            virtualCalendarCode: 'fNrSAOxByU9c',
         },
         {
             period: '<b>8th - 29th March</b>',
             price: '$29',
             start: '2023-03-08 - 17:46',
             end: '2023-03-29 - 17:45',
-            ktValue: 'aPweOAd3HoYf',
+            personCalendarCode: 'aPweOAd3HoYf',
+            virtualCalendarCode: 'WqM67h3eHXoQ',
         },
         {
             period: '<b>29th March - 5th April</b>',
             price: '$45',
             start: '2023-03-29 - 17:46',
             end: '2023-04-05 - 17:45',
-            ktValue: 'wuHgnVWZ6KlF',
+            personCalendarCode: 'wuHgnVWZ6KlF',
+            virtualCalendarCode: 'V2CeRwck8jYf',
         },
     ];
 
@@ -67,15 +70,34 @@ function renderEvents() {
 
         if(eventClass == 'present-event') {
             // <h1>Current Date Time: ${curDateTimeStr}</h1>
-            calendarContainer.innerHTML += `
-                <div class="js_kt_asset_embed js_kartra_trackable_object" data-kt-type="calendar"
-                    data-kt-embed="inline"
-                    data-kt-value="${event.ktValue}"
-                    data-kt-owner="mpD5zD4g"
-                    data-kt-accent="#7f4fc0" >
-                </div>
-            `;
-            eventAddedFlag = true;
+            if(event.personCalendarCode) {
+                calendarContainer.innerHTML += `
+                    <div id="personCalendar" 
+                        class="js_kt_asset_embed js_kartra_trackable_object" 
+                        data-kt-type="calendar"
+                        data-kt-embed="inline"
+                        data-kt-value="${event.personCalendarCode}"
+                        data-kt-owner="mpD5zD4g"
+                        data-kt-accent="#7f4fc0" >
+                    </div>
+                `;
+                eventAddedFlag = true;
+            }
+
+            if(event.virtualCalendarCode) {
+                calendarContainer.innerHTML += `
+                    <div id="virtualCalendar" 
+                        class="js_kt_asset_embed js_kartra_trackable_object" 
+                        data-kt-type="calendar" 
+                        data-kt-embed="inline" 
+                        data-kt-value="${event.virtualCalendarCode}"
+                        data-kt-owner="mpD5zD4g" 
+                        data-kt-accent="#7f4fc0" >
+                    </div>
+                `;
+                eventAddedFlag = true;
+            }
+            
         }
 
     }
