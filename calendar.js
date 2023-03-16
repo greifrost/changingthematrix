@@ -1,5 +1,7 @@
 let calendarContainer = document.querySelector("#calendar-container");
 let eventContainer = document.querySelector("#event-container");
+let personRadio = document.querySelector('#personRadio');
+let virtualRadio = document.querySelector('#virtualRadio');
 
 let calendarRendered = false;
 let curDateStr = null;
@@ -143,6 +145,18 @@ async function setServerTime() {
     // }, 3000);
 }
 
+function attachEventListeners() {
+    function toggleDisplay(event) {
+        let type = event.target.value
+        console.log(type);
+    }
+
+    if(personRadio && virtualRadio) {
+        personRadio.addEventListener('change', toggleDisplay);
+        virtualRadio.addEventListener('change', toggleDisplay);
+    }
+}
+
 
 function include(file) {
       
@@ -151,8 +165,8 @@ function include(file) {
     script.type = 'text/javascript';
     script.defer = true;
       
-    document.getElementsByTagName('head').item(0).appendChild(script);
-      
+    document.getElementsByTagName('head').item(0).appendChild(script);     
 }
       
 setServerTime();
+attachEventListeners();
