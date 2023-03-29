@@ -29,7 +29,7 @@ function renderEvents() {
             virtualCalendarCode: 'WqM67h3eHXoQ',
         },
         {
-            period: '<b>2nd April - 5th April</b>',
+            period: '<b>2nd - 5th April</b>',
             price: '$45',
             start: '2023-04-02 - 19:01',
             end: '2023-04-05 - 17:45',
