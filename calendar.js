@@ -15,7 +15,7 @@ function renderEvents() {
         {
             period: '<b>5th - 14th April</b>',
             price: '$19',
-            start: '2023-04-05 - 17:45',
+            start: '2023-04-04 - 17:45',
             end: '2023-04-14 - 17:45',
             personCalendarCode: 'eGvt3py15WZa',
             virtualCalendarCode: '5iBANhW4VDlF',
