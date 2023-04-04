@@ -13,28 +13,28 @@ function renderEvents() {
     
     let events = [
         {
-            period: '<b>1st - 8th March</b>',
+            period: '<b>5th - 14th April</b>',
             price: '$19',
-            start: '2023-03-01 - 17:45',
-            end: '2023-03-08 - 17:45',
-            personCalendarCode: 'kBqhVFJeg0Yf',
-            virtualCalendarCode: 'V2CeRwck8jYf',
+            start: '2023-04-05 - 17:45',
+            end: '2023-04-14 - 17:45',
+            personCalendarCode: 'eGvt3py15WZa',
+            virtualCalendarCode: '5iBANhW4VDlF',
         },
         {
-            period: '<b>8th March - 2nd April</b>',
+            period: '<b>14th April - 2nd May</b>',
             price: '$29',
-            start: '2023-03-08 - 17:46',
-            end: '2023-04-02 - 19:00',
-            personCalendarCode: 'aPweOAd3HoYf',
-            virtualCalendarCode: 'WqM67h3eHXoQ',
+            start: '2023-04-14 - 17:46',
+            end: '2023-05-02 - 19:00',
+            personCalendarCode: 'Yy02hGZUSCCp',
+            virtualCalendarCode: '251gl3eGd4Yf',
         },
         {
-            period: '<b>2nd - 5th April</b>',
+            period: '<b>2nd May - 5th May</b>',
             price: '$45',
-            start: '2023-04-02 - 19:01',
-            end: '2023-04-05 - 17:45',
-            personCalendarCode: 'wuHgnVWZ6KlF',
-            virtualCalendarCode: 'fNrSAOxByU9c',
+            start: '2023-05-02 - 19:01',
+            end: '2023-05-05 - 17:45',
+            personCalendarCode: 'XHgRhIw7dBXc',
+            virtualCalendarCode: '4cCAg0Q3aJZa',
         },
     ];
 
