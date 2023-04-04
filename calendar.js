@@ -18,7 +18,7 @@ function renderEvents() {
             start: '2023-03-01 - 17:45',
             end: '2023-03-08 - 17:45',
             personCalendarCode: 'kBqhVFJeg0Yf',
-            virtualCalendarCode: 'fNrSAOxByU9c',
+            virtualCalendarCode: 'V2CeRwck8jYf',
         },
         {
             period: '<b>8th March - 2nd April</b>',
@@ -34,7 +34,7 @@ function renderEvents() {
             start: '2023-04-02 - 19:01',
             end: '2023-04-05 - 17:45',
             personCalendarCode: 'wuHgnVWZ6KlF',
-            virtualCalendarCode: 'V2CeRwck8jYf',
+            virtualCalendarCode: 'fNrSAOxByU9c',
         },
     ];
 
