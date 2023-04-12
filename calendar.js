@@ -29,10 +29,10 @@ function renderEvents() {
             virtualCalendarCode: '251gl3eGd4Yf',
         },
         {
-            period: '<b>2nd May - 5th May</b>',
+            period: '<b>2nd May - 10th May</b>',
             price: '$45',
             start: '2023-05-02 - 19:01',
-            end: '2023-05-05 - 17:45',
+            end: '2023-05-10 - 17:45',
             personCalendarCode: 'XHgRhIw7dBXc',
             virtualCalendarCode: '4cCAg0Q3aJZa',
         },
