@@ -1,11 +1,9 @@
 #event-calendar-container {
     display: flex;
-    
 }
 
 #event-container {
     padding-right: 30px;
-    text-align: center;
 }
 
 #event-container .event {
