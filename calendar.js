@@ -12,14 +12,14 @@ function renderEvents() {
     }
     
     let events = [
-        {
+        /*{
             period: '<b>5th - 14th April</b>',
             price: '$19',
             start: '2023-04-04 - 17:45',
             end: '2023-04-14 - 17:45',
             personCalendarCode: 'eGvt3py15WZa',
             virtualCalendarCode: '5iBANhW4VDlF',
-        },
+        },*/
         {
             period: '<b>14th April - 2nd May</b>',
             price: '$29',
