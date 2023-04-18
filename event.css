@@ -1,5 +1,6 @@
 #event-calendar-container {
     display: flex;
+    text-align: justify;
 }
 
 #event-container {
