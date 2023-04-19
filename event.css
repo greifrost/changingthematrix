@@ -8,6 +8,7 @@
 
 #event-container .event {
     display: flex;
+    justify-content: center;
     padding: 5px 8px;
 }
 
