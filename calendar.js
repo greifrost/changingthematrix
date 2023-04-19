@@ -63,12 +63,12 @@ function renderEvents() {
                     ${event.price}
                     ${event.period}
                 </p>
+                </div>
+                `;
                 // <div class="price">
                 // </div>
                 // <div class="period">
                 // </div>
-            </div>
-        `;
 
         if(eventClass == 'present-event') {
             // <h1>Current Date Time: ${curDateTimeStr}</h1>
