@@ -59,11 +59,11 @@ function renderEvents() {
 
         eventContainer.innerHTML += `
             <div class="event ${eventClass}">
-                <p class="event-text">
-                    ${event.price}
-                    ${event.period}
+                <p class="price-period">
+                    <span class="price">${event.price}</span>
+                    <span class="period">${event.period}</span>
                 </p>
-                </div>
+            </div>
                 `;
                 // <div class="price">
                 // </div>
