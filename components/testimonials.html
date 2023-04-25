@@ -1,1 +1,70 @@
-TESTIMONIALS
+<style>
+    @media (max-width: 600px) {
+        .testimonial>.js_kartra_component_holder>.kartra_element_bg {
+            width: calc(100vw - 40px) !important;
+        }
+
+        .testimonial {
+            width: calc(100vw - 40px) !important;
+        }
+    }
+
+    @media (min-width: 601px) {
+        .testimonial>.js_kartra_component_holder>.kartra_element_bg {
+            width: 380px !important;
+        }
+
+        .testimonial {
+            width: 380px !important;
+        }
+    }
+
+    .testimonial-inner-container {
+        display: flex;
+        overflow-x: scroll;
+        padding-top: 50px;
+        /* padding-right: 20px; */
+        transition: all 0.5s;
+        scroll-behavior: smooth;
+        /*width: 100vw;*/
+    }
+
+    /* div:has(> .testimonial-container) {
+        margin-left: unset !important;*/
+    /*margin-right: unset !important;*/
+
+    /*width: calc(100vw - 20px)!important;
+    } */
+
+    .testimonial {
+        margin-right: 10px;
+    }
+
+    .testimonial div[data-component="text"] {
+        min-height: 250px !important;
+    }
+
+    /* .testimonial > .js_kartra_component_holder {
+    width: 500px !important;
+} */
+
+    /* .testimonial>.js_kartra_component_holder>.kartra_element_bg {
+        width: 400px !important;
+    } */
+</style>
+
+
+<script>
+let testimonials = document.querySelector('.testimonial-inner-container');
+let testmonial = document.querySelector('.testimonial');
+
+let computedStyle = getComputedStyle(testmonial);
+let fullWidth;
+
+fullWidth = 
+    parseInt(computedStyle.marginLeft) +
+    parseInt(computedStyle.marginRight) +
+    parseInt(computedStyle.width);
+
+testimonials.scrollLeft += fullWidth;
+</script>
