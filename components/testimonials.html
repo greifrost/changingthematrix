@@ -1,3 +1,5 @@
+
+<div data-embed="true">
 <style>
     @media (max-width: 600px) {
         .testimonial>.js_kartra_component_holder>.kartra_element_bg {
@@ -53,34 +55,33 @@
     } */
 </style>
 
-<div data-embed="true">
-    <script>
-        (function() {
-            let testimonials = document.querySelector('.testimonial-inner-container');
-            let testimonial = document.querySelector('.testimonial');
-            let testimonialCount = document.querySelectorAll('.testimonial').length;
-            let computedStyle = getComputedStyle(testimonial);
-            
-            let fullWidth = 
-                parseInt(computedStyle.marginLeft) +
-                parseInt(computedStyle.marginRight) +
-                parseInt(computedStyle.width);
-            
-            let offset = 10;
-            testimonials.scrollLeft = offset;
-            index = 1;
-            function scroll() {
-                testimonials.scrollLeft = fullWidth * index + offset;
-            
-                index++;
-                if(index >= (testimonialCount - 1))  {
-                    index = 1;
-                    testimonials.scrollLeft = offset;
-                }
+<script>
+    (function() {
+        let testimonials = document.querySelector('.testimonial-inner-container');
+        let testimonial = document.querySelector('.testimonial');
+        let testimonialCount = document.querySelectorAll('.testimonial').length;
+        let computedStyle = getComputedStyle(testimonial);
+        
+        let fullWidth = 
+            parseInt(computedStyle.marginLeft) +
+            parseInt(computedStyle.marginRight) +
+            parseInt(computedStyle.width);
+        
+        let offset = 10;
+        testimonials.scrollLeft = offset;
+        index = 1;
+        function scroll() {
+            testimonials.scrollLeft = fullWidth * index + offset;
+        
+            index++;
+            if(index >= (testimonialCount - 1))  {
+                index = 1;
+                testimonials.scrollLeft = offset;
             }
-            
-            setInterval(scroll, 500);
-        })();
-    </script>
+        }
+        
+        setInterval(scroll, 500);
+    })();
+</script>
 
 </div>
