@@ -23,7 +23,7 @@
         display: flex;
         overflow-x: scroll;
         padding-top: 50px;
-        /* padding-right: 20px; */
+        padding-right: 20px;
         transition: all 0.5s;
         scroll-behavior: smooth;
         /*width: 100vw;*/
@@ -53,18 +53,34 @@
     } */
 </style>
 
+<div data-embed="true">
+    <script>
+        (function() {
+            let testimonials = document.querySelector('.testimonial-inner-container');
+            let testimonial = document.querySelector('.testimonial');
+            let testimonialCount = document.querySelectorAll('.testimonial').length;
+            let computedStyle = getComputedStyle(testimonial);
+            
+            let fullWidth = 
+                parseInt(computedStyle.marginLeft) +
+                parseInt(computedStyle.marginRight) +
+                parseInt(computedStyle.width);
+            
+            let offset = 10;
+            testimonials.scrollLeft = offset;
+            index = 1;
+            function scroll() {
+                testimonials.scrollLeft = fullWidth * index + offset;
+            
+                index++;
+                if(index >= (testimonialCount - 1))  {
+                    index = 1;
+                    testimonials.scrollLeft = offset;
+                }
+            }
+            
+            setInterval(scroll, 500);
+        })();
+    </script>
 
-<script>
-let testimonials = document.querySelector('.testimonial-inner-container');
-let testmonial = document.querySelector('.testimonial');
-
-let computedStyle = getComputedStyle(testmonial);
-let fullWidth;
-
-fullWidth = 
-    parseInt(computedStyle.marginLeft) +
-    parseInt(computedStyle.marginRight) +
-    parseInt(computedStyle.width);
-
-testimonials.scrollLeft += fullWidth;
-</script>
+</div>
