@@ -29,7 +29,7 @@
 }
 
 #event-container .event.past-event {
-    text-decoration: line-through;
+    /* text-decoration: line-through; */
     font-size: 1.2em;
 
 }
