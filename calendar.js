@@ -21,20 +21,20 @@ function renderEvents() {
             virtualCalendarCode: '5iBANhW4VDlF',
         },*/
         {
-            period: '<b>14th April - 3rd May</b>',
+            period: '<b>10th May - 2nd July</b>',
             price: '$29',
-            start: '2023-04-14 - 17:46',
-            end: '2023-05-03 - 18:00',
-            personCalendarCode: 'Yy02hGZUSCCp',
-            virtualCalendarCode: '251gl3eGd4Yf',
+            start: '2023-05-04 - 17:46',
+            end: '2023-07-02 - 18:00',
+            personCalendarCode: 'p0tHfjGSOKlF',
+            virtualCalendarCode: 'sLIUdEiBCPrK',
         },
         {
-            period: '<b>3rd May - 10th May</b>',
+            period: '<b>2nd July - 5th July</b>',
             price: '$45',
-            start: '2023-05-03 - 18:01',
-            end: '2023-05-10 - 17:45',
-            personCalendarCode: 'XHgRhIw7dBXc',
-            virtualCalendarCode: '4cCAg0Q3aJZa',
+            start: '2023-07-02 - 18:01',
+            end: '2023-07-5 - 17:45',
+            personCalendarCode: '21DT7RB64s9c',
+            virtualCalendarCode: '4xL7uAPWMFdT',
         },
     ];
 
