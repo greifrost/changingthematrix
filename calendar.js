@@ -21,7 +21,7 @@ function renderEvents() {
             virtualCalendarCode: '5iBANhW4VDlF',
         },*/
         {
-            period: '<b>10th May - 2nd July</b>',
+            period: '<b>10th May - 14th June</b>',
             price: '$29',
             start: '2023-05-04 - 17:46',
             end: '2023-06-14 - 18:00',
@@ -29,7 +29,7 @@ function renderEvents() {
             virtualCalendarCode: 'sLIUdEiBCPrK',
         },
         {
-            period: '<b>2nd July - 5th July</b>',
+            period: '<b>14th June - 5th July</b>',
             price: '$45',
             start: '2023-06-14 - 18:01',
             end: '2023-07-5 - 17:45',
