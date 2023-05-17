@@ -25,16 +25,16 @@ function renderEvents() {
             price: '$29',
             start: '2023-05-04 - 17:46',
             end: '2023-06-14 - 18:00',
-            personCalendarCode: 'p0tHfjGSOKlF',
-            virtualCalendarCode: 'sLIUdEiBCPrK',
+            personCalendarCode: 'Od3eV2Ic8NoQ',
+            virtualCalendarCode: 'cTKFvQO1lqXc',
         },
         {
             period: '<b>14th June - 5th July</b>',
             price: '$45',
             start: '2023-06-14 - 18:01',
             end: '2023-07-5 - 17:45',
-            personCalendarCode: '21DT7RB64s9c',
-            virtualCalendarCode: '4xL7uAPWMFdT',
+            personCalendarCode: 'uyI2GODnk1dT',
+            virtualCalendarCode: 'omEwPgKBMq9c',
         },
     ];
 
