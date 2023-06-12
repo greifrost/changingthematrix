@@ -29,10 +29,10 @@ function renderEvents() {
             virtualCalendarCode: 'cTKFvQO1lqXc',
         },
         {
-            period: '<b>14th June - 5th July</b>',
+            period: '<b>14th June - 2nd August</b>',
             price: '$45',
             start: '2023-06-14 - 18:01',
-            end: '2023-07-5 - 17:45',
+            end: '2023-08-2 - 17:45',
             personCalendarCode: 'uyI2GODnk1dT',
             virtualCalendarCode: 'omEwPgKBMq9c',
         },
