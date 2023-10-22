@@ -1,6 +1,6 @@
 Splide.defaults = {
   type: "loop",
-  perPage: 2,
+  perPage: 1,
   easing: "ease"
 };
 
