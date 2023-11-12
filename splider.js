@@ -11,6 +11,7 @@ else if (width < 900) {
 new Splide('.splide', {
     type: 'loop',
     perPage: perPage,
+    autoplay: 'pause',
 }).mount();
       
 } );
